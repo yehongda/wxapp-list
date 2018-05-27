@@ -1,0 +1,10 @@
+<image class='logc' src='/images/logc.png'></image>
+<view class='logc-desc'>备忘清单笔记</view>
+<view class='logc-desc'>欢迎你</view>
+
+<view class='login-desc tip1'>请微信授权后放心使用备忘清单笔记</view>
+<view class='login-desc tip2'>您的信息和数据将受到保护</view>
+
+  <button class="wxpower-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信授权登录
+  <view class='wxicon'></view>
+</button>

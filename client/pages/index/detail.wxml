@@ -1,0 +1,34 @@
+<wxs module="filter" src="../../filter/filter.wxs"></wxs>
+
+<view class='top_tab'>
+  <view class='title'>{{classify_name}}</view>
+  <view class='time'>创建时间：{{filter.subDate(create_time)}}</view>
+</view>
+<!--checkbox-group就是一个checkbox组 有个监听事件bindchange，监听数据选中和取消-->
+<checkbox-group bindchange="listenCheckboxChange">
+  <block wx:for-items="{{list}}">
+    <view class="item-lable {{item.complete_flag==1?'is_checked':''}}" data-idx="{{item.list_id}}" 
+    data-text="{{item.list_text}}" bindtap="showDialogForUpdate">
+        <checkbox value="{{item.list_id}}" checked="{{item.complete_flag==1}}"/> 
+        {{item.list_text}}
+        </view>
+    </block>
+</checkbox-group>
+
+<view class='bot-tab' bindtap="addlist">
+  <view class='icon-add-50' hover-class='icon-add-hover'></view>
+</view>
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">{{model_title}}</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <textarea placeholder-class="input-holder" maxlength='100' value="{{list_text}}" bindinput="inputChange" class="input" placeholder="请输入内容"></textarea>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">{{button_text}}</view>
+  </view>
+</view>

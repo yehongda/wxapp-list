@@ -1,0 +1,46 @@
+
+<view class="container" wx:if="{{hasPower}}">
+  <view class="body">
+      <view  wx:for="{{list}}"> 
+
+        <view data-name='{{item.classify_name}}'data-istop='{{item.top_flag}}' data-idx='{{item.classify_id}}' data-time='{{item.create_time}}' class="list {{item.classify_id==classify_id?'list-select':''}}" hover-class="list-hover" bindtap="navigatToDetail" bindlongpress="showTips" bindtouchstart="bindTouchStart" bindtouchend="bindTouchEnd">
+            <view  class="icon {{item.top_flag==1?'top_flag':''}}"></view>
+            <view class='classify'>{{item.classify_name}}</view> 
+             <view  class="sum {{item.sum>0?'multi':''}}">{{item.sum}}</view>
+
+          </view>
+
+      </view>
+  </view>
+  <view class='create-tab'>
+      <view class='icon-add-50'></view>
+    <view class='create-text' bindtap="createClassify">创建清单</view>
+  </view>
+</view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal||showTips}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">{{model_title}}</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <input placeholder-class="input-holder" maxlength='20' value="{{classify_name}}" bindinput="inputChange" class="input" placeholder="请输入清单名称"></input>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">{{button_text}}</view>
+  </view>
+</view>
+
+
+<!-- <view class="modal-mask" bindtap="hideTips" catchtouchmove="preventTouchMove" wx:if="{{showTips}}"></view> -->
+<view class="tips" wx:if="{{showTips}}">
+      <view data-op="top" hover-class="list-hover" wx:if="{{istop!='1'}}"  bindtap="operator">置 \n\n顶</view>
+      <view data-op="untop" hover-class="list-hover" wx:else bindtap="operator">取消置顶</view>
+      <view data-op="done" hover-class="list-hover" bindtap="operator">已完成</view>
+      <view data-op="upate" hover-class="list-hover" bindtap="operator">修改名称</view>
+      <view data-op="del" hover-class="list-hover" bindtap="operator">删 除</view>
+  </view>
+

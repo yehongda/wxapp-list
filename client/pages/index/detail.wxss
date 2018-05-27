@@ -1,0 +1,195 @@
+.list-text{
+
+}
+label{
+
+}
+checkbox{
+ padding: 15rpx 10rpx 15rpx 0;
+ line-height: 60rpx;
+}
+checkbox .wx-checkbox-input{
+  
+   width: 30rpx; /* 背景的宽 */
+   height: 30rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+/* checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: red;
+} */
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   
+   width: 50rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 50rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 50rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#cfcfcf; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+
+.item-lable{
+  width: 100%;
+  display: block;
+  font-size: 31rpx;
+  padding: 0 15rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  color: black;
+}
+.is_checked{
+  text-decoration: line-through;
+  color: #8f8f8f;
+  background: #e4e4e4;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+/* 模态框样式-start */
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width:100%;
+overflow:hidden;
+position:fixed;
+top:0;
+left:0;
+z-index:9999;
+background:#f9f9f9;
+}
+
+.modal-title {
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 20rpx 32rpx;
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+
+.input {
+  width: 100%;
+  font-size: 31rpx;
+  height:200rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+/* 模态框样式-end */
+
+.top_tab{
+  width: 100%;
+  height: 150rpx;
+  background: #704214;
+  padding: 15rpx 40rpx;
+}
+.title{
+  margin: 30rpx 0 20rpx 0;
+  font-size: 40rpx;
+  color: #fff;
+}
+.time{
+  font-size: 26rpx;
+  color: #fff;
+}
+
+
+/*加号*/
+.icon-add-50{
+    position: relative;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#704214;
+
+}
+.icon-add-50:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -1px;
+    background-color: #cfcfcf;
+}
+.icon-add-50:after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -1px;
+    margin-top: -15px;
+    background-color: #cfcfcf;
+}
+.bot-tab{
+  position:fixed;
+  bottom:50rpx;
+  left:40%;
+}
+.icon-add-hover{
+  width: 45px;
+  height: 45px;
+}

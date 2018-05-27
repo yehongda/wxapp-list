@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myinfo/myinfo",
+    "pages/index/detail",
+    "pages/empower/empower"
+  ],
+  "window": {
+    "backgroundColor": "#704214",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#704214",
+    "navigationBarTitleText": "我的清单",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "black",
+    "borderStyle": "light",
+    "selectedColor": "#704214",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的清单",
+        "iconPath": "images/list_not.png",
+        "selectedIconPath": "images/list_select.png"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "text": "我的",
+        "iconPath": "images/person_not.png",
+        "selectedIconPath": "images/person_select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

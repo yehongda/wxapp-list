@@ -1,0 +1,82 @@
+/**index.wxss**/
+page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.userinfo{
+    margin: 40rpx;
+    height: 140rpx;
+    width: 100%;
+    background: #FFF;
+    border-left: none;
+    border-right: none;
+    transition: all 300ms ease;
+    border: 1px solid #e1e1e1d1;
+}
+
+.userinfo-avatar {
+    width:100rpx;
+    float:left;
+height:100rpx;
+margin:20rpx;
+border-radius:15rpx;
+border:1rpx solid #c59061;
+
+}
+
+.userinfo-nickname {
+    font-size:35rpx
+}
+
+.userinfo-nickname::after {
+  border: none;
+}
+.count{
+  width: 100%;
+  height: 90rpx;
+  background: #fff;
+  
+  border: 1px solid #e1e1e1d1;
+  border-bottom: none;
+}
+.share{
+   width: 100%;
+  height: 90rpx;
+  border: 1px solid #e1e1e1d1;
+  border-bottom: none;
+  background: #fff;
+}
+.abort{
+   width: 100%;
+  height: 90rpx;
+  border: 1px solid #e1e1e1d1;
+  background: #fff;
+}
+.text-view{
+  float:left;
+height:140rpx;
+line-height:140rpx;
+margin-left:30rpx;
+}
+.abort image, .count image, .share image{
+  width: 60rpx;
+  height: 60rpx;
+margin:15rpx 30rpx 15rpx 30rpx;
+float:left;
+}
+.text{
+  height:90rpx;
+float:left;
+font-size:34rpx;
+line-height:90rpx;
+
+}
+.big{
+  float:right;
+  margin-right:30rpx; 
+  font-size:51rpx;
+  color:#d2d2d2;
+
+}

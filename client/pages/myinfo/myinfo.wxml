@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 用户登录测试 -->
+    <view class="userinfo">
+        <image
+            class="userinfo-avatar"
+            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+        <view class='text-view'>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <view class='count'>
+    <image  src='../../images/data.png'></image><view class='text'>统计数据</view>
+    <view class='big'>></view>
+     </view>
+    <view class='share'>
+    <image src='../../images/share.png'></image><view class='text'>分享</view>
+    <view class='big'>></view>
+    </view>
+    <view class='abort'>
+    <image src='../../images/abort.png'></image><view class='text'>关于备忘清单笔记</view>
+    <view class='big'>></view>
+    </view>
+
+</view>

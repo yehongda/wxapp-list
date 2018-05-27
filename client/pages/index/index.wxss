@@ -1,0 +1,223 @@
+.icon{
+  background-image: url("data:image/svg+xml,%3C?xml version='1.0' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg t='1527314764657' class='icon' style='' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3805' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' height='200'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C/style%3E%3C/defs%3E%3Cpath d='M134.095238 256C147.560466 256 158.476191 246.448741 158.476191 234.666667 158.476191 222.884592 147.560466 213.333333 134.095238 213.333333L36.571428 213.333333C23.1062 213.333333 12.190476 222.884592 12.190476 234.666667 12.190476 246.448741 23.1062 256 36.571428 256L134.095238 256Z' p-id='3806' fill='%232c2c2c'%3E%3C/path%3E%3Cpath d='M134.095238 533.333333C147.560466 533.333333 158.476191 523.782074 158.476191 512 158.476191 500.217926 147.560466 490.666667 134.095238 490.666667L36.571428 490.666667C23.1062 490.666667 12.190476 500.217926 12.190476 512 12.190476 523.782074 23.1062 533.333333 36.571428 533.333333L134.095238 533.333333Z' p-id='3807' fill='%232c2c2c'%3E%3C/path%3E%3Cpath d='M134.095238 810.666667C147.560466 810.666667 158.476191 801.115407 158.476191 789.333333 158.476191 777.55126 147.560466 768 134.095238 768L36.571428 768C23.1062 768 12.190476 777.55126 12.190476 789.333333 12.190476 801.115407 23.1062 810.666667 36.571428 810.666667L134.095238 810.666667Z' p-id='3808' fill='%232c2c2c'%3E%3C/path%3E%3Cpath d='M987.428572 256C1000.893801 256 1011.809523 246.448741 1011.809523 234.666667 1011.809523 222.884592 1000.893801 213.333333 987.428572 213.333333L280.380951 213.333333C266.915725 213.333333 256 222.884592 256 234.666667 256 246.448741 266.915725 256 280.380951 256L987.428572 256Z' p-id='3809' fill='%232c2c2c'%3E%3C/path%3E%3Cpath d='M993.52381 533.333333C1006.989037 533.333333 1017.904762 523.782074 1017.904762 512 1017.904762 500.217926 1006.989037 490.666667 993.52381 490.666667L286.47619 490.666667C273.010963 490.666667 262.095238 500.217926 262.095238 512 262.095238 523.782074 273.010963 533.333333 286.47619 533.333333L993.52381 533.333333Z' p-id='3810' fill='%232c2c2c'%3E%3C/path%3E%3Cpath d='M996.571428 810.666667C1010.036657 810.666667 1020.952382 801.115407 1020.952382 789.333333 1020.952382 777.55126 1010.036657 768 996.571428 768L289.52381 768C276.058581 768 265.142857 777.55126 265.142857 789.333333 265.142857 801.115407 276.058581 810.666667 289.52381 810.666667L996.571428 810.666667Z' p-id='3811' fill='%232c2c2c'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  display: inline-block;
+  width:32rpx;
+  height:32rpx;
+  float:left;
+  margin:30rpx 25rpx 25rpx 40rpx;
+  vertical-align: middle;
+  line-height: 90rpx;
+}
+
+.list{
+  width:100%;
+  line-height: 90rpx;
+  height: 90rpx;
+  border-bottom:1rpx solid #f2f2f2;
+
+}
+
+.classify{
+    float:left;
+    font-size: 30rpx;
+    vertical-align: middle;
+    color: black;
+    line-height: 90rpx;
+}
+
+.body{
+  width: 100%;
+}
+.create-tab{
+  height:60rpx;
+  width:100%;
+  line-height:60rpx;
+  font-size:35rpx;
+  float:left;
+  color:#704214;
+  position:fixed;
+bottom:50rpx;
+left:250rpx;
+
+}
+.create-text{
+  width: 250rpx;
+  
+}
+
+
+/* 模态框样式-start */
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  transition: all 300ms ease;
+  width:100%;
+overflow:hidden;
+position:fixed;
+top:0;
+left:0;
+z-index:9999;
+background:#f9f9f9;
+}
+
+.modal-title {
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+/* 模态框样式-end */
+
+.tips{
+   width:100%;
+  overflow:hidden;
+  position:fixed;
+  bottom:0%;
+  left:0;
+  z-index:9999;
+  background:#f9f9f9;
+  box-shadow: 1rpx 1rpx 1rpx #000
+}
+
+.tips view{
+  width: 100%;
+  text-align: center;
+  height:80rpx;
+border-bottom:1rpx solid #f2f2f2;
+line-height:80rpx;
+
+}
+.list-select{
+  background: #bbb;
+}
+.list-hover{
+  background: #bbb;
+}
+
+/*加号*/
+.icon-add-50{
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width:36rpx;
+  height:36rpx;
+  float:left;
+  margin:15rpx 15rpx 10rpx 30rpx;
+  vertical-align:middle;
+  line-height:90rpx;
+}
+.icon-add-50:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -1px;
+    background-color: #704214;
+}
+.icon-add-50:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-left: -1px;
+    margin-top: -8px;
+    background-color: #704214;
+}
+
+.sum{
+  float:right;
+margin:5px 20rpx 0 0;
+border-radius:50%;
+background:#cfcfcf;
+width:60rpx;
+height:60rpx;
+line-height:60rpx;
+text-align:center;
+color:#fff;
+font-size:56rpx;
+vertical-align:medium;
+
+}
+
+.multi{
+  color: yellow;
+}
+.top_flag{
+  border:1px solid red;
+border-radius:50%;
+background:#f4000057;
+
+
+}
