@@ -131,7 +131,9 @@ module.exports = {
   batchUpdateComFlag: async (ctx, next) => {
     var checkArr = ctx.request.body
     await knex('list_data')
-      .update({complete_flag:0}).then(function (rows) {
+      .update({complete_flag:0})
+      .where('classify_id', '=', ctx.request.query.classify_id)
+      .then(function (rows) {
         knex('list_data')
           .where(
           knex.raw('list_id in (?)', [checkArr])

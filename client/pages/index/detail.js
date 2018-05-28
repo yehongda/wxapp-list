@@ -84,9 +84,10 @@ Page({
     this.setData({
       list: list
     })  
+    var that = this;
     qcloud.request({
       login: true,
-      url: config.service.host + '/weapp/batchUpdateComFlag',
+      url: config.service.host + '/weapp/batchUpdateComFlag?classify_id=' + that.data.classify_id,
       data: checkArr,
       method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: header ? header : "application/json", // 设置请求的 header
